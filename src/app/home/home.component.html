@@ -1,0 +1,233 @@
+
+<!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <a class="navbar-brand" href="/">Luxury Stays</a>
+
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav" id="navicon">
+      <li class="nav-item">
+        <a class="nav-link" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" routerLink="/home">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link"  routerLinkActive="active" routerLink="/hotels">Hotels</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link"  routerLinkActive="active" routerLink="/guest">Booking</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active"  routerLink="/signup">Register</a>
+      </li> 
+      <li class="nav-item">
+        <button style="border-radius: 10px;"class="btn btn-outline-danger mx-2" routerLink="/login">Logout</button>
+      </li>
+    </ul>    
+    </div>
+</nav>
+
+  <!--Home-->
+<div class="container-fluid">
+      <div id="home">
+     <h1> MAKE YOUR STAY </h1>
+       <h1 style="font-weight: bold;">A PLEASURABLE ONE </h1>
+       <br>
+       <button type="button" class="btn btn-secondary"[routerLink]="['/hotels/']">BOOK NOW</button>
+     </div>
+   </div>
+
+  <!--Services-->
+
+ <div id="service">
+    <h5 style="color: black; text-align: center;font-size: 25px;">OUR SERVICES</h5>
+    <div class="border"></div>
+    <div class="row">
+       
+      <div class="col-md-4 col-xs-6">
+        <div class="card shadow">
+          <div class="inner">
+            <i class="fas fa-hotel"></i>
+         </div>
+         <div class="card-body">
+           <h5 class="card-title">AFFORDABLE HOTELS</h5>
+           <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore temporibus debitis eaque? Laborum, illo reiciendis.</h6>
+         </div>
+        </div>
+      </div> 
+      <div class="col-md-4 col-xs-6">
+      <div class="card shadow">
+        <div class="inner">
+          <i class="fas fa-coffee"></i>
+         
+      </div>
+       <div class="card-body">
+         <h5 class="card-title">REFRESHMENT</h5>
+         <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum exercitationem fugit doloribus, repudiandae reprehenderit debitis!</h6>
+       </div>
+      </div>
+    </div> 
+    <div class="col-md-4 col-xs-6">
+      <div class="card shadow">
+        <div class="inner">
+       <i class="fas fa-door-closed"></i>
+       </div>
+       <div class="card-body">
+         <h5 class="card-title">HOUSE KEEPING</h5>
+         <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolor nemo sequi culpa doloremque enim.</h6>
+       </div>
+      </div>
+    </div> 
+  </div> 
+  <div class="row">
+    <div class="col-md-4 col-xs-6">
+      <div class="card shadow">
+        <div class="inner">
+          <i class="fas fa-bullhorn"></i>
+       </div>
+       <div class="card-body">
+         <h5 class="card-title">SECURITY</h5>
+         <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore temporibus debitis eaque? Laborum, illo reiciendis.</h6>
+       </div>
+      </div>
+    </div> 
+    <div class="col-md-4 col-xs-6">
+      <div class="card shadow">
+        <div class="inner">
+          <i class="fas fa-globe-asia"></i>
+       </div>
+       <div class="card-body">
+         <h5 class="card-title">AROUND THE WORLD</h5>
+         <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore temporibus debitis eaque? Laborum, illo reiciendis.</h6>
+       </div>
+      </div>
+    </div> 
+    <div class="col-md-4 col-xs-6">
+      <div class="card shadow">
+        <div class="inner">
+          <i class="fas fa-utensils"></i>
+       </div>
+       <div class="card-body">
+         <h5 class="card-title">FOOD SERVICE</h5>
+         <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, necessitatibus? Omnis, libero. Deleniti, ipsum deserunt!</h6>
+       </div>
+      </div>
+    </div> 
+    </div>
+  </div> 
+  
+    
+
+<div id="testimonials">
+<div class="container">
+  <h5 style="color: black; text-align: center;">TESTIMONIALS</h5>
+  <div class="border"></div>
+<div class="row">
+
+<div class="col-md-4 col-xs-6">
+  <div class="box">
+  <div class="img-area">
+    <img src="https://cdn.pixabay.com/photo/2014/11/19/10/52/man-537136_640.jpg" >
+  </div>
+  <div class="img-text">
+    <div class="name">Mark</div>
+    <span class="stars">
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+    </span>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio suscipit quos id placeat ipsum deleniti blanditiis quisquam debitis inventore nihil.</p>
+  </div>
+</div>
+</div>
+
+<div class=" col-md-4 col-xs-6">
+  <div class="box">
+  <div class="img-area">
+    <img src="https://th.bing.com/th/id/OIP.Xuv_hrD_myCLRyPfKX4CGwHaLH?pid=ImgDet&rs=1" >
+  </div>
+  <div class="img-text">
+    <div class="name">Kelly</div>
+    <span class="stars">
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+      <i class="far fa-star-half"></i>
+    </span>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio suscipit quos id placeat ipsum deleniti blanditiis quisquam debitis inventore nihil.</p>
+  </div>
+</div>
+</div>
+
+<div class="col-md-4 col-xs-6">
+  <div class="box">
+  <div class="img-area">
+    <img src="http://www.newdesignfile.com/postpic/2010/05/free-stock-photos-people_102217.jpg" >
+  </div>
+  <div class="img-text">
+    <div class="name">Angela</div>
+    <span class="stars">
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+    </span>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio suscipit quos id placeat ipsum deleniti blanditiis quisquam debitis inventore nihil.</p>
+  </div>
+</div>
+</div>
+</div>
+ </div>
+</div>
+
+  <!--footer-->
+  <footer class="page-footer bg-dark">
+    <div class="container text-center text-md-left mt-5">
+     <div class="row">
+       <div class="col-md-3 mx-auto mb-4">
+        <h6 class="text-uppercase font-weight-bold">Luxury Stays</h6>
+        <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 75px;height: 2px;">
+       <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora iusto, velit eaque ut blanditiis facere repellat possimus veniam odio dignissimos.</p>
+       </div>
+  
+       <div class="col-md-2 mx-auto mb-4">
+        <h6 class="text-uppercase font-weight-bold">Get Help</h6>
+         <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 75px;height: 2px;">
+        <ul class="list-unstyled">
+           <li class="my-2"><a href="#"></a>FAQ</li> 
+           <li class="my-2"><a href="#"></a>Booking Status</li> 
+           <li class="my-2"><a href="#"></a>Our Services</li> 
+        </ul>
+        </div>
+        <div class="col-md-2 mx-auto mb-4">
+         <h6 class="text-uppercase font-weight-bold">Useful Links</h6>
+         <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 75px;height: 2px;">
+         <ul class="list-unstyled">
+          <li class="my-2"><a [routerLink]="['/home/']">Home</a></li> 
+          <li class="my-2"><a [routerLink]="['/hotels/']">Hotels</a></li> 
+          <li class="my-2"><a [routerLink]="['/login/']">Login</a></li> 
+       </ul>
+        </div>
+        <div class="col-md-3 mx-auto mb-4">
+          <h6 class="text-uppercase font-weight-bold">Contact</h6>
+          <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 75px;height: 2px;">
+          <ul class="list-unstyled">
+           <li class="my-2"><i class="fas fa-envelope"></i>luxurystays@gmail.com</li> 
+           <li class="my-2"><i class="fas fa-phone"></i>9565767869</li> 
+           <li class="my-2"><i class="fab fa-instagram"></i>luxury_stays_</li> 
+        </ul>
+         </div>
+     </div>
+    </div>
+    <div class="footer-copyright text-center py-3">
+      <p>&copy;Copyright
+        <a href="#">luxurystays.com</a>
+      </p>
+    </div>
+  </footer>

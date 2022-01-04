@@ -1,0 +1,31 @@
+.container{
+    border-radius: 30px;
+}
+#id{
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.thephuketnews.com%2Fonline-hotel-booking-giants-to-make-major-changes-after-uk-probe-70317.php&psig=AOvVaw1_MwHEjT-16wCesVqv8Jcp&ust=1641212643250000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLDHjeKHk_UCFQAAAAAdAAAAABAJ");
+}
+.card{
+    border:none;
+    width:400px; 
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: rgb(135, 182, 201);
+    box-shadow: 5px 5px 6px rgba(0,0,0,0.5),
+                -5px -5px 6px rgba(0,0,0,0.5);
+}
+button{
+    margin-top: 10px;
+}
+h2{
+    position: absolute;
+    color: white;
+    right: 4rem;
+    top: 10rem;
+    text-align:center;
+    text-shadow: 2px 2px 2px black;
+    max-width: 200px;
+    font-size: 40px;
+}

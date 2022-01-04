@@ -1,0 +1,39 @@
+/* .card{
+    border:none;
+    width:400px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: rgb(134, 215, 218);
+} */
+.container{
+    border-radius: 30px;
+}
+
+.card{
+    border:none;
+    width:400px; 
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: rgb(135, 182, 201);
+    box-shadow: 5px 5px 6px rgba(0,0,0,0.5),
+                -5px -5px 6px rgba(0,0,0,0.5);
+}
+button{
+    margin-top: 10px;
+}
+h2{
+    position: absolute;
+    color: white;
+    right: 4rem;
+    top: 10rem;
+    text-align:center;
+    text-shadow: 2px 2px 2px black;
+    max-width: 200px;
+    font-size: 40px;
+}

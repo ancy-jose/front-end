@@ -1,0 +1,32 @@
+
+<div class="container-fluid">
+<div class="jumbotron">
+    <div class="row">
+    <div class="col-sm-12" *ngFor="let bookings of BookingList">
+        <div *ngIf="Room_num==bookings.room_num">
+          <h3>Booking Details:</h3>
+          <br>
+          <div class="row">
+              <div class="col-sm-4 col-xs-12">
+                  <div class="heading">
+                      <strong>Hotel Name</strong>
+                      <p>{{bookings.hotel_name}}</p>
+                  </div>
+              </div>
+              <div class="col-sm-5 col-xs-12">
+                <div class="heading">
+                    <strong>Room Number</strong>
+                    <p style="text-align:justify;">{{bookings.room_num}}</p>
+                </div>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+                <div class="heading">
+                    <strong>Booking Id</strong>
+                    <p>{{bookings.booking_Id}}</p>
+                </div>
+            </div>
+            <br>
+            <button type="button" [routerLink]="['/guest/']" class="btn btn-outline-primary btn-sm" (click)=addtoBookings(bookings)>Confirm Booking</button>
+</div>
+</div>
+</div>

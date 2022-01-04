@@ -1,0 +1,67 @@
+<div class="container">
+<div *ngFor="let room of roomList">
+        <div *ngIf="hotel_id==room.hotel_Id">
+            <div id="box">
+            <div class="row shadow">
+                <div class="col-sm-4 p-0">
+                  <div class="card">
+                    <div class="card-img-wrapper">
+                      <img class="card-img-top" src="{{room.room_img}}">
+                    </div>
+                    <div class="card-body">
+                      <h1 class="card-title">{{room.hotel_name}}</h1>
+                      <hr>
+                      <div>
+                          <strong>Price: Rs.{{room.price}}</strong>
+                      </div>
+                      
+                    </div>
+                    <div class="card-footer">
+                      <div class="btn-group d-flex">
+                        <button [routerLink]="['/booking/', room.room_num]" class="btn btn-success">Book Now</button>
+                      </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-sm-8 p-0">
+                  <div class="tab-panel p-3">
+                        <h1>Overview</h1>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="heading">
+                                    <strong>Hotel Name</strong>
+                                    <p>{{room.hotel_name}}</p>
+                                </div>
+                                <div class="heading">
+                                    <strong>Occupancy</strong>
+                                    <p>{{room.occupancy}}</p>
+                                </div>
+                            </div>
+              
+                            <div class="col-sm-6">
+                                <div class="heading">
+                                    <strong>Room Type</strong>
+                                    <p>{{room.room_type}}</p>
+                                </div>
+              
+                                <div class="heading">
+                                    <strong>Room View</strong>
+                                    <p>{{room.room_view}}</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="heading">
+                                    <br>
+                                    <br>
+                                    <strong>Special Features</strong>
+                                    <p>Comfortable rooms and suites overlook lush gardens with panoramic views of the Arenal Volcano. The hotel features a splendid outdoor swimming pool in addition to satellite TV, air conditioning, and free WiFi.</p>
+                                </div>
+                            </div>
+                          </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+    </div>

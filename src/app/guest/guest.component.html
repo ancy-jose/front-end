@@ -1,0 +1,49 @@
+<ng-container *ngIf="room.length !=0">
+    <div class="container">
+    <div class="card-table">
+        <div class="card-order">
+            <table class="table table-responsive">
+            <thead>
+                <tr>
+                   
+                    <th>Booking Id</th>
+                    <th>Hotel Name</th>
+                    <th>hotel_Id</th>
+                    <th>Room num</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let rooms of room;let i=index">
+                    <td>{{rooms.booking_Id}}</td>
+                    <td>{{rooms.hotel_name}}</td>
+                    <td>{{rooms.hotel_Id}}</td>    
+                    <td>{{rooms.room_num}}</td>
+                    <td>
+                        <button (click)="removeBooking(rooms)" class="btn btn-outline-danger"><i class="fas fa-trash-alt"></i> Cancel</button>
+                    </td>            
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+</div>
+<div  id="rating">
+    <button [routerLink]="['/rating/']" class="btn btn-secondary">Rate us</button>&nbsp;
+    <button [routerLink]="['/home/']" class="btn btn-outline-success">Go to Home</button>
+</div>
+</ng-container>
+
+<ng-container *ngIf="room.length==0">
+    <div class="container">
+        <div class="card">
+            <h5 class="card-title">MY BOOKINGS</h5>
+        </div>
+         <div class="center">
+             <img src="https://lh3.googleusercontent.com/proxy/60qK7z6FXT1Xz07-HFGx12CQd_0leMpANhXUHau5_7azmTLTcKD-y204qxinEwD5Xgje5swT2ZtQEdBlFHjVM88knOdiJ5a0urryz_k_ve1hbQFYMSnyDFNCUpRR7L59l3d4kIGgRvRyzVaNO9GDttNVZ1cEcEb2GvoJU791AQR0n4g" alt="">
+            <h4>No Bookings</h4>
+            <button [routerLink]="['/hotels/']" class="btn btn-primary">Book Now</button>
+         </div>    
+    </div>
+    </ng-container>
+
+    

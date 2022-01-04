@@ -1,0 +1,21 @@
+.container-fluid{
+ height: 700px;
+ width:100%;
+ padding:100px 200px;
+ background-image: url("https://yokotafss.com/wp-content/uploads/2020/04/GettyImages-1148898071-1536x1536.jpg");
+}
+h1{
+    color: rgb(64, 137, 233);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.jumbotron{
+   background-color: rgba(0,0,0,0.5);
+   color: #fff;
+   border-radius: 10px;
+   width:100%;
+   padding:7% 20%; 
+}
+button{
+    margin-top: 10px;
+    font-size: large;
+}

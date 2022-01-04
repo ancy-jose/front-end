@@ -1,0 +1,62 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "signupUsers": [
+    {
+      "fullName": "",
+      "username": "reshma05",
+      "email": "reshma98@gmail.com",
+      "mobile": 4667896523,
+      "password": "reshma@05",
+      "id": 1
+    },
+    {
+      "fullName": "",
+      "username": "",
+      "email": "",
+      "mobile": "",
+      "password": "",
+      "id": 2
+    },
+    {
+      "fullName": "",
+      "username": "",
+      "email": "",
+      "mobile": "",
+      "password": "",
+      "id": 3
+    },
+    {
+      "fullname": "Maya",
+      "username": "maya89",
+      "email": "maya98@gmail.com",
+      "mobile": 7645865862,
+      "password": "maya@89",
+      "id": 4
+    },
+    {
+      "fullname": "Maya",
+      "username": "maya98",
+      "email": "maya98@gmail.com",
+      "mobile": 7645865862,
+      "password": "maya@98",
+      "id": 5
+    },
+    {
+      "fullname": "Maya",
+      "username": "maya98",
+      "email": "maya98@gmail.com",
+      "mobile": 7645865862,
+      "password": "maya@98",
+      "id": 6
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
